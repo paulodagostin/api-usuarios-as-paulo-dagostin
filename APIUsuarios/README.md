@@ -123,8 +123,11 @@ POST /usuarios
   "dataNascimento": "2000-05-20",
   "telefone": "(47) 99999-8888"
 }
+````
 
-Atualizar usuário – PUT /usuarios/
+### Atualizar usuário – PUT /usuarios/{id}
+
+```json
 {
   "nome": "Maria Souza",
   "email": "maria@gmail.com",
@@ -132,8 +135,11 @@ Atualizar usuário – PUT /usuarios/
   "telefone": "(47) 99999-8888",
   "ativo": true
 }
+```
 
-Erro de validação (exemplo)
+### Erro de validação (exemplo)
+
+```json
 {
   "errors": [
     {
@@ -142,16 +148,13 @@ Erro de validação (exemplo)
     }
   ]
 }
+```
 
 ## Autor
 
 Paulo Ricardo Dagostin Rosso
-
 RA: Terça-Feira - Noite
+Curso: Análise e Desenvolvimento de Sistemas
 
-Curso: Analise e Desenvolvimento de Sistemas
-
-Assista à demonstração completa da API no vídeo abaixo:
-
-https://youtu.be/oNCR3wf5Sgk?si=j_hIQ7fqIUuUDfFm
-
+Assista ao vídeo completo:
+[https://youtu.be/oNCR3wf5Sgk?si=j_hIQ7fqIUuUDfFm]
