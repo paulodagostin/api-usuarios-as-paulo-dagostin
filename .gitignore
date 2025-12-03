@@ -1,0 +1,9 @@
+bin/
+obj/
+*.db-shm
+*.db-wal
+*.db-journal
+*.pdb
+*.dll
+*.cache
+*.log
