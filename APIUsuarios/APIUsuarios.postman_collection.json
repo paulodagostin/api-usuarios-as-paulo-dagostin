@@ -1,0 +1,94 @@
+{
+  "info": {
+    "name": "APIUsuarios Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Listar usuários",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5295/usuarios",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5295",
+          "path": ["usuarios"]
+        }
+      }
+    },
+    {
+      "name": "Obter usuário por ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5295/usuarios/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5295",
+          "path": ["usuarios", "1"]
+        }
+      }
+    },
+    {
+      "name": "Criar usuário",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Maria Silva\",\n  \"email\": \"maria@gmail.com\",\n  \"senha\": \"123456\",\n  \"dataNascimento\": \"2000-05-20\",\n  \"telefone\": \"(47) 99999-8888\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5295/usuarios",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5295",
+          "path": ["usuarios"]
+        }
+      }
+    },
+    {
+      "name": "Atualizar usuário",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Maria Souza\",\n  \"email\": \"maria@gmail.com\",\n  \"dataNascimento\": \"2000-05-20\",\n  \"telefone\": \"(47) 99999-8888\",\n  \"ativo\": true\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5295/usuarios/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5295",
+          "path": ["usuarios", "1"]
+        }
+      }
+    },
+    {
+      "name": "Deletar usuário (soft delete)",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:5295/usuarios/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5295",
+          "path": ["usuarios", "1"]
+        }
+      }
+    }
+  ]
+}
