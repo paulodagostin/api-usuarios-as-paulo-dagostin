@@ -1,9 +1,12 @@
 bin/
 obj/
+
 *.db-shm
 *.db-wal
 *.db-journal
+
+*.log
+*.cache
+
 *.pdb
 *.dll
-*.cache
-*.log
