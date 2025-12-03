@@ -150,3 +150,8 @@ Paulo Ricardo Dagostin Rosso
 RA: Terça-Feira - Noite
 
 Curso: Analise e Desenvolvimento de Sistemas
+
+Assista à demonstração completa da API no vídeo abaixo:
+
+https://youtu.be/oNCR3wf5Sgk?si=j_hIQ7fqIUuUDfFm
+
